@@ -1,0 +1,193 @@
+<div #dataToExport>
+    <!DOCTYPE html>
+    <html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Professional Resume</title>
+        <style>
+            * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+                font-family: Arial, sans-serif;
+            }
+
+            body {
+                line-height: 1.6;
+                color: #333;
+                max-width: 800px;
+                margin: 0 auto;
+            }
+
+            .header {
+                background-color: #0B5394;
+                color: white;
+                padding: 2rem;
+                text-align: center;
+            }
+
+            .header h1 {
+                font-size: 2.5rem;
+                margin-bottom: 1rem;
+            }
+
+            .contact-info {
+                font-size: 0.9rem;
+                color: #e6e6e6;
+            }
+
+            .main-content {
+                padding: 2rem;
+            }
+
+            .section {
+                margin-bottom: 2rem;
+            }
+
+            .section-title {
+                color: #0B5394;
+                font-size: 1.2rem;
+                font-weight: bold;
+                margin-bottom: 1rem;
+                border-bottom: 2px solid #ddd;
+                padding-bottom: 0.5rem;
+            }
+
+            .summary {
+                margin-bottom: 1.5rem;
+            }
+
+            .skills-grid {
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                gap: 1rem;
+            }
+
+            .skills-grid ul {
+                list-style-type: none;
+            }
+
+            .skills-grid li {
+                margin-bottom: 0.5rem;
+            }
+
+            .experience-item {
+                margin-bottom: 1.5rem;
+            }
+
+            .job-title {
+                font-weight: bold;
+            }
+
+            .job-period {
+                color: #666;
+                font-size: 0.9rem;
+            }
+
+            .company-location {
+                font-style: italic;
+                margin-bottom: 0.5rem;
+            }
+
+            .achievements {
+                list-style-type: none;
+            }
+
+            .achievements li {
+                margin-bottom: 0.5rem;
+            }
+
+            .education {
+                margin-top: 1.5rem;
+            }
+
+            .education-item {
+                margin-bottom: 1rem;
+            }
+        </style>
+    </head>
+
+    <body>
+        <div class="header">
+            <h1>Diya Agarwal</h1>
+            <div class="contact-info">
+                Bengaluru 5788754 | 4558787878 | d&#64;g.com
+            </div>
+        </div>
+
+        <div class="main-content">
+            <div class="section">
+                <h2 class="section-title">Summary</h2>
+                <div class="summary">
+                    Customer-focused Retail Sales professional with solid understanding of retail dynamics, marketing
+                    and customer service. Offering 5 years of experience providing quality product recommendations and
+                    solutions to meet customer needs and exceed expectations. Demonstrated record of exceeding revenue
+                    targets by leveraging communication skills and sales expertise.
+                </div>
+            </div>
+
+            <div class="section">
+                <h2 class="section-title">Skills</h2>
+                <div class="skills-grid">
+                    <ul>
+                        <li>Cash register operation</li>
+                        <li>POS system operation</li>
+                        <li>Sales expertise</li>
+                        <li>Teamwork</li>
+                    </ul>
+                    <ul>
+                        <li>Inventory management</li>
+                        <li>Accurate money handling</li>
+                        <li>Documentation and recordkeeping</li>
+                        <li>Retail merchandising expertise</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="section">
+                <h2 class="section-title">Experience</h2>
+                <div class="experience-item">
+                    <div class="job-title">RETAIL SALES ASSOCIATE <span class="job-period">| 02/2017 - Current</span>
+                    </div>
+                    <div class="company-location">ZARA - New Delhi, India</div>
+                    <ul class="achievements">
+                        <li>Increased monthly sales 10% by effectively upselling and cross-selling products to maximize
+                            profitability.</li>
+                        <li>Prevented store losses by leveraging awareness, attention to detail, and integrity to
+                            identify and investigate concerns.</li>
+                        <li>Processed payments and maintained accurate drawers to meet financial targets.</li>
+                    </ul>
+                </div>
+
+                <div class="experience-item">
+                    <div class="job-title">BARISTA <span class="job-period">| 03/2015 - 01/2017</span></div>
+                    <div class="company-location">Dunkin' Donuts - New Delhi, India</div>
+                    <ul class="achievements">
+                        <li>Upsold seasonal drinks and pastries, boosting average store sales by ₹1500 weekly.</li>
+                        <li>Managed morning rush of over 300 customers daily with efficient, levelheaded customer
+                            service.</li>
+                        <li>Trained entire staff of 15 baristas in new smoothie program offerings and procedures.</li>
+                        <li>Developed creative and appealing latte art techniques and instructed coworkers in method.
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="section">
+                <h2 class="section-title">Education and Training</h2>
+                <div class="education-item">
+                    <div class="company-location">Oxford Software Institute & Oxford School of English - New Delhi,
+                        India</div>
+                    <div>Diploma in Financial Accounting</div>
+                    <div class="job-period">2010</div>
+                </div>
+            </div>
+        </div>
+    </body>
+
+    </html>
+</div>
+
+<button (click)="downloadAsPdf()">pdf download</button>
